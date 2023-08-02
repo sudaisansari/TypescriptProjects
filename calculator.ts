@@ -5,12 +5,6 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-
-
-
-
-
-
 function Calculator(val1: number, val2: number, operation: string): number {
     switch (operation) {
         case "+":
@@ -57,7 +51,7 @@ rl.question("Enter 1st value : ", (userInput1) => {
                 return;
             }
             const result = Calculator(value1, value2, operation);
-            console.log(result)
+            console.log(`\t${value1} ${operation} ${value2}  = `,result)
         })
     })
 })
